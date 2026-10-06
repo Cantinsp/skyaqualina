@@ -116,7 +116,7 @@
     const unidad = document.getElementById("inp_unidad").value.trim();
     const residente = document.getElementById("inp_residente").value.trim();
     
-    const empresa = document.getElementById("inp_empresa").value.trim();
+    const empresa = "";
     const obs    = document.getElementById("inp_obs").value.trim();
 
     if (!nombre || !tipo || !unidad) {
@@ -152,7 +152,7 @@
   };
 
   function limpiarFormularioIngreso() {
-    ["inp_nombre","inp_ci","inp_unidad","inp_residente","inp_placa","inp_empresa","inp_obs"]
+    ["inp_nombre","inp_ci","inp_unidad","inp_residente","inp_obs"]
       .forEach(id => document.getElementById(id).value = "");
     document.getElementById("inp_tipo").selectedIndex = 0;
   }
