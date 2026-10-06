@@ -115,7 +115,7 @@
     const tipo   = document.getElementById("inp_tipo").value;
     const unidad = document.getElementById("inp_unidad").value.trim();
     const residente = document.getElementById("inp_residente").value.trim();
-    const placa  = document.getElementById("inp_placa").value.trim();
+    
     const empresa = document.getElementById("inp_empresa").value.trim();
     const obs    = document.getElementById("inp_obs").value.trim();
 
@@ -1135,6 +1135,10 @@ tr:hover td { background: rgba(201,162,39,0.05); }
             <div>
               <div class="field-lbl">RESIDENTE QUE AUTORIZA</div>
               <input id="inp_residente" class="field-inp" placeholder="Nombre residente">
+            </div>
+          <div>
+              <div class="field-lbl">OBSERVACIONES</div>
+              <input id="inp_obs" class="field-inp" placeholder="Observación (opcional)" autocomplete="off">
             </div>
           <div style="display:flex;gap:8px;">
             <button class="btn-reg" onclick="registrarIngreso()" style="flex:1;">↓ REGISTRAR INGRESO</button>
