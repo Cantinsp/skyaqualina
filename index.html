@@ -253,7 +253,7 @@
         <thead>
           <tr>
             <th>#</th><th>Nombre</th><th>CI</th><th>Unidad</th><th>Tipo</th>
-            <th>Residente que autoriza</th><th>Placa</th><th>Ingreso</th><th>Salida</th><th>Estado</th><th>Observaciones</th>
+            <th>Residente que autoriza</th><th>Fecha</th><th>Ingreso</th><th>Salida</th><th>Estado</th><th>Observaciones</th>
           </tr>
         </thead>
         <tbody>
@@ -265,6 +265,7 @@
               <td>${v.unidad}</td>
               <td><span class="badge badge-${v.tipo?.toLowerCase() || 'visita'}">${v.tipo||"—"}</span></td>
               <td>${v.residente || "—"}</td>
+              <td>${v.fecha || v.fechaISO || "—"}</td>
               <td>${v.horaIngresoTexto || "—"}</td>
               <td>${v.horaSalidaTexto || "—"}</td>
               <td><span class="estado-${v.estado === 'dentro' ? 'dentro' : 'salio'}">${v.estado === "dentro" ? "● Dentro" : "✓ Salió"}</span></td>
