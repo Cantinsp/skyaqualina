@@ -186,7 +186,7 @@
           <span class="cv-nombre">${v.nombre}</span>
           <span class="badge badge-${v.tipo?.toLowerCase() || 'visita'}">${v.tipo || "Visita"}</span>
         </div>
-        <div class="cv-det">📍 ${v.unidad} · 🕐 Ingresó: ${v.horaIngresoTexto}</div>
+        <div class="cv-det">📍 ${v.unidad} · 📅 ${v.fecha || v.fechaISO || "—"} · 🕐 Ingresó: ${v.horaIngresoTexto}</div>
         ${v.placa ? `<div class="cv-det">🚗 ${v.placa}</div>` : ""}
         <button class="btn-salida" onclick="registrarSalida('${key}', '${v.nombre}')">
           ↑ Registrar salida
